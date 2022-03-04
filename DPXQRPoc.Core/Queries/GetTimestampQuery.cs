@@ -1,6 +1,9 @@
-﻿namespace DPXQRPoc.Core.Queries;
+﻿using DPXQRPoc.Core.Models;
+using MediatR;
 
-public class GetTimestampQuery
+namespace DPXQRPoc.Core.Queries;
+
+public class GetTimestampQuery : IRequest<IsoTimestamp>
 {
-    
+    public int IsoTimestampId { get; set; }
 }

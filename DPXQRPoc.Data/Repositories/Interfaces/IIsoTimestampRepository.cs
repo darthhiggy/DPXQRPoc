@@ -1,12 +1,10 @@
-﻿using DPXQRPoc.Core.Interfaces;
-using DPXQRPoc.Data.DbContexts;
+﻿
 
-namespace DPXQRPoc.Core.Models;
+using DPXQRPoc.Data.DataModels;
 
-public interface IIsoTimestampRepository : IRepository
+namespace DPXQRPoc.Data.Repositories.Interfaces;
+
+public interface IIsoTimestampRepository : IRepository<IsoTimestampDataModel>
 {
-    List<IsoTimestamp> GetAllTimestamps();
-    IsoTimestamp GetTimestampById(int id);
-    List<IsoTimestamp> SearchTimestamp(string searchString);
-    void AddTimeStamp(IsoTimestamp timeStamp);
+    
 }

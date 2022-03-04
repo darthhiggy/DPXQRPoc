@@ -1,7 +1,10 @@
 ﻿namespace DPXQRPoc.Data.DataModels;
 
-public class IsoTimestamp
+public class IsoTimestampDataModel
 {
+    public IsoTimestampDataModel()
+    {
+    }
     // we will also add Data annotations to limit text size  
     public int Id { get; set; } = 0;
     public string EventType { get; set; } = string.Empty;

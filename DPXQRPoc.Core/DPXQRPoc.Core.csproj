@@ -6,4 +6,22 @@
         <Nullable>enable</Nullable>
     </PropertyGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\DPXQRPoc.Data\DPXQRPoc.Data.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Interfaces" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
+      <PackageReference Include="AWSSDK.Core" Version="3.7.8.6" />
+      <PackageReference Include="AWSSDK.Extensions.NETCore.Setup" Version="3.7.1" />
+      <PackageReference Include="AWSSDK.SQS" Version="3.7.2.29" />
+      <PackageReference Include="MediatR" Version="10.0.1" />
+      <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="10.0.1" />
+      <PackageReference Include="Rebus.AmazonSqs" Version="6.3.2" />
+    </ItemGroup>
+
 </Project>

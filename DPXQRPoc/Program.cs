@@ -1,9 +1,8 @@
-using DPXQRPoc;
+using DPXQRPoc.Helpers;
 
 IHost host = Host.CreateDefaultBuilder(args)
-    .ConfigureServices(services =>
-    {
-        services.AddHostedService<Worker>();
+    .ConfigureServices((context, services) => {
+        services.ConfigureService(context);
     })
     .Build();
 

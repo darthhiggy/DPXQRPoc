@@ -1,8 +1,7 @@
 ﻿using AutoMapper;
-using DPXQRPoc.Core.Helpers.BaseClasses;
 using DPXQRPoc.Data.Repositories.Interfaces;
 
-namespace DPXQRPoc.Core.CommandHandlers.BaseHandlers;
+namespace DPXQRPoc.Core.Helpers.BaseClasses;
 
 public abstract class IsoTimestampHandlerBase<TQ, T> : HandlerBase<TQ, T> where TQ : MediatR.IRequest<T>
 {

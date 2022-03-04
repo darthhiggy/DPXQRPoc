@@ -5,9 +5,30 @@
         <Nullable>enable</Nullable>
         <ImplicitUsings>enable</ImplicitUsings>
         <UserSecretsId>dotnet-DPXQRPoc-851A812C-2322-409D-9B06-4AE245594B56</UserSecretsId>
+        <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="Microsoft.Extensions.Hosting" Version="6.0.0"/>
+        <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
+        <PackageReference Include="AWSSDK.Core" Version="3.7.8.6" />
+        <PackageReference Include="AWSSDK.Extensions.NETCore.Setup" Version="3.7.1" />
+        <PackageReference Include="AWSSDK.SQS" Version="3.7.2.29" />
+        <PackageReference Include="MediatR" Version="10.0.1" />
+        <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="10.0.1" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.2" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Abstractions" Version="6.0.2" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="6.0.2" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.2">
+          <PrivateAssets>all</PrivateAssets>
+          <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
+        <PackageReference Include="Microsoft.Extensions.Hosting" Version="6.0.0" />
+        <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="6.0.1" />
+        <PackageReference Include="Rebus.AmazonSqs" Version="6.3.2" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\DPXQRPoc.Core\DPXQRPoc.Core.csproj" />
+      <ProjectReference Include="..\DPXQRPoc.Data\DPXQRPoc.Data.csproj" />
     </ItemGroup>
 </Project>
