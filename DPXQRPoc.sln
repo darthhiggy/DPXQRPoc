@@ -6,6 +6,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DPXQRPoc.Data", "DPXQRPoc.D
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DPXQRPoc.Core", "DPXQRPoc.Core\DPXQRPoc.Core.csproj", "{D39F3361-1E01-4474-8C6D-8A51A1A0DFA1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DPXQRPoc.MessageBussWorker", "DPXQRPoc.MessageBussWorker\DPXQRPoc.MessageBussWorker.csproj", "{885757E1-E848-4D02-802F-7FB058DC72C3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{D39F3361-1E01-4474-8C6D-8A51A1A0DFA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D39F3361-1E01-4474-8C6D-8A51A1A0DFA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D39F3361-1E01-4474-8C6D-8A51A1A0DFA1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{885757E1-E848-4D02-802F-7FB058DC72C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{885757E1-E848-4D02-802F-7FB058DC72C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{885757E1-E848-4D02-802F-7FB058DC72C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{885757E1-E848-4D02-802F-7FB058DC72C3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

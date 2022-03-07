@@ -22,9 +22,4 @@ public static class ServiceSetup
         services.AddDefaultAWSOptions(context.Configuration.GetAWSOptions());
         services.AddAWSService<IAmazonSQS>();
     }
-
-    private static void SetupRebus(this IServiceCollection services, HostBuilderContext context)
-    {
-        services.Transport
-    }
 }
